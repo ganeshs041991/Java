@@ -1,3 +1,5 @@
+@Library('jenkins_shared_lib') _
+
 pipeline{
 
      agent any
@@ -13,7 +15,13 @@ pipeline{
 
                      script{
 
-                           git branch: 'master', url: 'https://github.com/ganeshs041991/Java.git'
+                           gitCheckout(
+
+                                branch: "master",
+                                url: "https://github.com/ganeshs041991/Java.git"
+
+ 
+			              )    
 
 
                                  } 
