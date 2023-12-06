@@ -13,7 +13,7 @@ pipeline{
 
                      script{
 
-                           git branch: 'main', url: 'https://github.com/ganeshs041991/Java.git'
+                           git branch: 'master', url: 'https://github.com/ganeshs041991/Java.git'
 
 
                                  } 
