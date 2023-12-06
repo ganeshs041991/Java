@@ -15,13 +15,23 @@ pipeline{
                                 url: "https://github.com/ganeshs041991/Java.git"
                  )    
                  } 
+           }
+
+                   stage( 'Unit Test Maven'){
+               
+                        steps{
+                           script{
+
+                         mvnTest()
+                 )    
+                 } 
+           }
+
+
+
  }
 
-
-                   }
-
-
-          }
+}
 
 
      
